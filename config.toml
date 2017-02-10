@@ -2,6 +2,9 @@ languageCode = "en-us"
 title = "Bison Design"
 baseurl = "http://bisondesign.net/"
 theme = "hugo-theme-air"
+paginate = 5
+DisqusShortname = ""
+Copyright = "All rights reserved - 2017"
 
 [params]
   description = "Simplicity in Software Design"
@@ -14,7 +17,7 @@ theme = "hugo-theme-air"
   googleAnalyticsUserID = ""
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   RSSLink = ""
-  githubName = ""
+  githubName = "bisondesign"
   twitterName = ""
   hideHUGOSupport = true
 
