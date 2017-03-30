@@ -15,3 +15,8 @@ this is the subject of my blog.
 I hope the excitement I feel upon finding that simplicity comes across in a way
 that is both educational and entertaining. If you find these pages interesting
 please share your insights in the comments.
+
+---
+
+> I work for PTC, a global provider of technology platforms and solutions for the Internet of Things (IoT).  I do not speak on behalf of my employer and my views do not necessarily reflect my employer's views.
+
