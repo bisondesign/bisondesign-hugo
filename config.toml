@@ -3,17 +3,17 @@ title = "Bison Design"
 baseurl = "http://bisondesign.net/"
 theme = "hugo-theme-air"
 paginate = 5
-DisqusShortname = ""
+disqusShortname = "" # ignore for now -- looking at options
 Copyright = "All rights reserved - 2017"
 
 [params]
   description = "Simplicity in Software Design"
-  cover = "images/bison.jpg"
+  cover = "/images/bison.jpg"
   author = "Andrew Dobrowolski"
   authorlocation = "Ann Arbor, MI"
   authorwebsite = "http://bisondesign.net/"
   bio= "Software architect and lover of mathematics."
-  logo = "images/bison.png"
+  logo = "/images/bison.png"
   googleAnalyticsUserID = ""
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   RSSLink = ""
