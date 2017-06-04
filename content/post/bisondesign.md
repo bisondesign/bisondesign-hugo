@@ -18,5 +18,5 @@ please share your insights in the comments.
 
 ---
 
-> I work for PTC, a global provider of technology platforms and solutions for the Internet of Things (IoT).  I do not speak on behalf of my employer and my views do not necessarily reflect my employer's views.
+> I work for P<span class="none"/>TC, a global provider of technology platforms and solutions for the Internet of Things (IoT).  I do not speak on behalf of my employer and my views do not necessarily reflect my employer's views.
 

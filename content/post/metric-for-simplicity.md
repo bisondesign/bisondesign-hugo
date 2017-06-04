@@ -1,7 +1,7 @@
 +++
 slug = "metric-for-simplicity"
 title = "A Metric for Simplicity"
-date = "2017-03-01"
+date = "2017-06-01"
 menu = ""
 draft = true
 share = true
@@ -55,7 +55,7 @@ Simplicity in software design, a practice that closely resembles elegance in
 mathematics, is the subject of a future blog post. Here we will stick with the
 user experience and in particular simplicity in the UI.
 
-### Simplicity metric for the UI
+### A model for the interaction of a human with the UI
 
 A milestone in the field of usability in computer systems was the publication
 of "The Psychology of Human-Computer Interaction" by Card, Moran, and Newell
@@ -65,14 +65,36 @@ of Practice][power] based on empirical data.
 
 {{< figure src="/images/03-HumanProcessor_Card_Moran_Newell_1983.jpg">}}
 
-Our model of human-computer interaction will be much simpler than the image
-above which comes from their book, but we will build on some of the same ideas.
-My goal is to show how automated analysis can be added to a UI design tool such
-as [Balamiq Mockups][balamiq] to help assess the usability of a UI for performing a
-specific task at the design stage.
+Models are useful for analysis. The suitability of a model can be judged by its
+predictive accuracy. Our model of human-computer interaction will be simpler
+than the image above which comes from their book, but will use some of the same
+ideas.
+
+I believe automated analysis can be added to a UI design tool such
+as [Balamiq Mockups][balamiq] to help assess the usability of a UI for
+performing a specific task at the design stage. 
+
+A UI is designed to accomplish certain tasks. For example, the same
+UI may be used to create an account or change a password: two distinct tasks.
+The value of a task to a given persona will be defined as the number of times
+that task is accomplished by that persona per year.
+
+For any capable UI a given task can be accomplished by a sequence of
+interactions with the components of the interface.
+
+Each interaction with and transition between UI components has a cost. The sum
+of the costs is "inefficiency". It is least in an efficient UI.
+
+Simplicity can be measured by the amount of "ink" or "clutter" in the UI.
+
+In a good UI the quotient of task value, divided by simplicity
+and efficiency is the metric by which I will judge the UI. 
+
+The sequence is not necessarily unique.  Sometimes the sequence is constrained,
+as when a button is disabled until certain fields are filled in properly.  
 
 - model of human behavior while interacting with a UI
-- accuracy of model can be judged by its predictive strength
+- 
 - difficult to evaluate in situ as different users have different experience levels
 - use of deep learning (like tensor flow) to refine the model
 - 
