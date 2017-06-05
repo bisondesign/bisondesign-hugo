@@ -3,7 +3,7 @@ slug = "metric-for-simplicity"
 title = "A Metric for Simplicity"
 date = "2017-06-01"
 menu = ""
-draft = true
+draft = false
 share = true
 tags = ["UX","simplicity", "UI"]
 comments = true
@@ -18,17 +18,17 @@ will describe a technique for measuring the simplicity of a UI design. This can 
 used to choose the simplest design from a selection. 
 
 I recently ran a training exercise in problem solving with an audience of 50
-top R&D personelle at a large corporation. Technology companies need to
+top developers at a large corporation. Technology companies need to
 innovate in order to stay ahead of the competition but innovation requires
-problem solving, and before we can solve problems we need to find them. For
-example, I never knew that I absolutely had to have a fingerprint reader on my
-phone until my wife got one. Whoever discovered that we all shared this common
-problem was a genius.
+problem solving.  But before we can solve problems we need to find them. For
+example, I never knew that I absolutely *had* to have a fingerprint reader on my
+phone until my wife got one. Whoever discovered that we all need a fingerprint
+reader was a genius.
 
-The true genious of a fingerprint reader is that it is so simple; even a
+The true genious of this invention is that it is so simple; even a
 toddler can learn to unlock a phone if the parents are crazy enough to
-program his fingerprints on it. Simplification (represented by the meme "Less
-if More") is part of refinement, the often skipped last step in problem
+register his fingerprints on it. Simplification (represented by the meme "Less
+if More") is part of solution refinement, the often skipped last step in problem
 solving.
 
 ### The meaning of simplicity
@@ -45,15 +45,15 @@ beneficial to mathematicians. A clunky proof woudn't really matter as long as
 it was still correct. Still, elegant proofs are a delight to behold, even on
 repeated viewing.
 
-Simplicity in computer science matters. The product (e.g. an app or service) is
-not an end but a means to an end. In the UI complexity impedes the end user
-from doing his task. In code complexity impedes future maintainability. In
+Simplicity in software matters. Your product (whether it's an app or a service)
+is not an end in itself but a means to an end. In the UI complexity impedes the
+end user from doing his task. In code complexity impedes maintainability. In
 software design complexity impedes flexibility. A clunky UI, a clunky design
 and a clunky implementation do matter.
 
-Simplicity in software design, a practice that closely resembles elegance in
-mathematics, is the subject of a future blog post. Here we will stick with the
-user experience and in particular simplicity in the UI.
+Simplicity in software design which closely resembles elegance in mathematics,
+is the subject of a future blog post. Here we will stick with the user
+experience and in particular simplicity in the UI.
 
 ### A model for the interaction of a human with the UI
 
@@ -67,37 +67,44 @@ of Practice][power] based on empirical data.
 
 Models are useful for analysis. The suitability of a model can be judged by its
 predictive accuracy. Our model of human-computer interaction will be simpler
-than the image above which comes from their book, but will use some of the same
+than the image above which comes from the book, but it will use some of the same
 ideas.
 
-I believe automated analysis can be added to a UI design tool such
-as [Balamiq Mockups][balamiq] to help assess the usability of a UI for
-performing a specific task at the design stage. 
+Suppose automated analysis could be added to a UI design tool such as
+[Balamiq Mockups][balamiq] to help assess the usability of a UI for performing
+a specific task at the design stage. Given a task, the UI designer would click,
+type and drag to complete the actions needed to complete the task using the
+mock, imitating the future user. These would be recorded and analyzed.
 
-A UI is designed to accomplish certain tasks. For example, the same
-UI may be used to create an account or change a password: two distinct tasks.
-The value of a task to a given persona will be defined as the number of times
-that task is accomplished by that persona per year.
+A UI can be designed to accomplish multiple tasks. For example, the same UI may
+be used to create an account or change a password: two distinct tasks. In that
+case both tasks would be considered in the analysis of the UI. These would not
+be given equal weight however. The weight of a task to a given persona will be
+proportional to its frequency. For example the number of times that task needs
+to be accomplished in a typical year, month or week.
 
-For any capable UI a given task can be accomplished by a sequence of
-interactions with the components of the interface.
+Being able to accomplish a task is not enough. That's basic suitability
+testing. Each interaction with and transition between UI components has a cost.
+Clicking on an item that is a big target costs less than if it were small. The
+distance the pointer has to move has a cost. Picking an item in a cluttered
+menu has a higher cost than clean ones. The sum of the costs is "inefficiency".
+Our goal will be to minimize inefficiency over the task.
 
-Each interaction with and transition between UI components has a cost. The sum
-of the costs is "inefficiency". It is least in an efficient UI.
-
-Simplicity can be measured by the amount of "ink" or "clutter" in the UI.
-
-In a good UI the quotient of task value, divided by simplicity
-and efficiency is the metric by which I will judge the UI. 
+Simplicity can be measured by the amount of "ink" or "clutter" in the UI. Less
+is more! In a good UI the quotient of task value, divided by simplicity and
+efficiency is the metric by which I will judge the UI.
 
 The sequence is not necessarily unique.  Sometimes the sequence is constrained,
-as when a button is disabled until certain fields are filled in properly.  
+as when a button is disabled until certain fields are filled in properly.  These
+variation can be measured as well. 
 
-- model of human behavior while interacting with a UI
-- 
-- difficult to evaluate in situ as different users have different experience levels
-- use of deep learning (like tensor flow) to refine the model
-- 
+This has gotten long enough.  In a future blog post I will discuss: 
+
+- the model of human behavior while interacting with a UI
+- measuring the cost of learning a UI by repeated performance of the same tasks
+- metric limitations, given different users have different experience levels
+- use of deep learning to refine the model
+
 
 ### References 
 
