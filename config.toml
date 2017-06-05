@@ -3,12 +3,12 @@ title = "Bison Design"
 baseurl = "http://bisondesign.net/"
 theme = "hugo-theme-air"
 paginate = 5
-disqusShortname = "" # ignore for now -- looking at options
+disqusShortname = "www-bisondesign-net" # @ disqus.com
 Copyright = "All rights reserved - 2017"
 
 [params]
   description = "Simplicity in Software Design"
-  cover = "/images/bison.jpg"
+  cover = "/images/screen.jpg"
   author = "Andrew Dobrowolski"
   authorlocation = "Ann Arbor, MI"
   authorwebsite = "http://bisondesign.net/"
