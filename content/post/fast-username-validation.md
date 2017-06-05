@@ -64,7 +64,7 @@ cases the background is pink when there is a problem.  The submit button
 is enabled only once all three problems are eliminated.  Doing all three
 checks on the client side leads to a repsonsive and simple user experience.
 
-### Knowing what you don't know: probabilistic data structures
+### Probabilistic data structures
 
 This type of behavior should be done in JavaScript on the browser.
 Unfortunately, you can't just download a long list of taken names. Even a
