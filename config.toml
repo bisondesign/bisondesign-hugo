@@ -1,23 +1,51 @@
+baseurl = "http://bisondesign.net/"
 languageCode = "en-us"
 title = "Bison Design"
-baseurl = "http://bisondesign.net/"
-theme = "hugo-theme-air"
+theme = "hugo-theme-casper"
 paginate = 5
-disqusShortname = "www-bisondesign-net" # @ disqus.com
+disqusshortname = "www-bisondesign-net" # @ disqus.com
 Copyright = "All rights reserved - 2017"
 
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/"
+weight = -120
+
+[[menu.main]]
+name = "Github repos"
+pre = "<h3>Follow me</h3>"
+url = "https://github.com/adobrowolski"
+weight = 100
+
+# [[menu.main]]
+# name = "Twitter timeline"
+# url = "https://twitter.com/adobrowolski"
+# weight = 101
+
+# [[menu.main]]
+# name = "Flipboard magazines"
+# url = "https://flipboard.com/@adobrowolski"
+# weight = 102
+
+# [[menu.main]]
+# name = "Keybase (secure msg)"
+# pre = "<h3>Contact me</h3>"
+# url = "https://Keybase.io/adobrowolski"
+# weight = 109
+
 [params]
-  description = "Simplicity in Software Design"
-  cover = "/images/screen.jpg"
-  author = "Andrew Dobrowolski"
-  authorlocation = "Ann Arbor, MI"
-  authorwebsite = "http://bisondesign.net/"
-  bio= "Software architect and lover of mathematics."
-  logo = "/images/bison.png"
-  googleAnalyticsUserID = ""
-  # Optional RSS-Link, if not provided it defaults to the standard index.xml
-  RSSLink = ""
-  githubName = "bisondesign"
-  twitterName = ""
-  hideHUGOSupport = true
+description = "Simplicity in Software Design"
+cover = "/images/screen.jpg"
+author = "Andrew Dobrowolski"
+authorlocation = "Ann Arbor, MI"
+authorwebsite = "http://bisondesign.net/"
+bio= "Software architect, Lover of mathematics."
+logo = "/images/bison.png"
+googleAnalyticsUserID = ""
+# Optional RSS-Link, if not provided it defaults to the standard index.xml
+RSSLink = ""
+githubName = "bisondesign"
+twitterName = ""
+hideHUGOSupport = true
 
