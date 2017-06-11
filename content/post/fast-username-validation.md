@@ -3,7 +3,7 @@ date = "2017-02-07T20:21:11-05:00"
 title = "Fast Username Validation"
 draft = false
 tags = ["UX","data-structure"]
-image = ""
+image = "/images/soren-astrup-jorgensen-229456.jpg"
 comments = true	# set false to hide Disqus
 share = true	# set false to hide share buttons
 +++

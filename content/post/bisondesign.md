@@ -2,7 +2,8 @@
 draft = false
 date = "2017-02-06T15:31:02-05:00"
 title = "Welcome to Bison Design"
-
+comments = false	# set false to hide Disqus
+share = false   	# set false to hide share buttons
 +++
 
 Welcome to the Bison Design blog!

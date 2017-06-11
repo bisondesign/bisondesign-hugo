@@ -7,7 +7,7 @@ draft = false
 share = true
 tags = ["UX","simplicity", "UI"]
 comments = true
-image = ""
+image = "/images/dawid-malecki-42536.jpg"
 
 +++
 
