@@ -41,8 +41,11 @@ I | ISP |Interface segregation principle
 D | DIP |Dependency inversion principle
 
 The argument from object oriented design is meant as an analogy. Still many of
-the same principles apply to UI components. While [atomic][atomic] design
-approaches to UI design are not new, they have different goals. 
+the same principles apply to UI components. Just like complex classes are built
+up from simpler classes, complex components can be built from simpler ones.
+While [atomic][atomic] approaches to UI design are not new, they have different
+goals.  Decomposition is a response to complexity.  SOLID design is a response 
+to fragility in the face of change and builds on decomposition. 
 
 The first three SOLID principles moderate the behavior of components and their
 extensions.
