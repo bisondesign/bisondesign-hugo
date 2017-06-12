@@ -45,7 +45,7 @@ the same principles apply to UI components. Just like complex classes are built
 up from simpler classes, complex components can be built from simpler ones.
 While [atomic][atomic] approaches to UI design are not new, they have different
 goals.  Decomposition is a response to complexity.  SOLID design is a response 
-to fragility in the face of change and builds on decomposition. 
+to fragility in the face of change; it builds on decomposition. 
 
 The first three SOLID principles moderate the behavior of components and their
 extensions.
@@ -84,12 +84,12 @@ satisfying them only at run time (referred to as 'wiring' the entity). The
 
 ### SOLID UI Component Use Case
 
-Frameworks like Angular 2.0, Aurelia, and React use components to support the
+Frameworks like Angular, Aurelia, and React use components to support the
 creation of Web UIs. HTML 5 supports the creation of Web Components natively.
 So why do we need the five SOLID patterns to govern our use of web components?
-In most cases they are not needed since Web UIs are small and static. 
+In most cases they are _not_ needed since most Web UIs are small and static. 
 
-A more disciplined approach is needed when a library of components is created
+The disciplined approach is needed when a library of components is created
 by a vendor and reused at scale by the customers of that vendor. The same is
 true when the vendor is one department of an organization creating a library to
 be used by other departments. In both of these cases updating the library must
@@ -98,13 +98,13 @@ be seamless, from the point of view of the "customers".
 This is where SOLID shines.  These principles allow maximum reuse with minimal 
 coupling between the components as a means to productivity and robustness.  
 
-Reuse comes in two dimensions. The first is akin to "inheritance" when a
+Reuse comes in two flavors. The first type is akin to "inheritance" when a
 component is extended to add features or modify presentation without breaking
 the contract of the base component. In this case the extension can act as a
 plug-in replacement for the base.
 
 Extension can be done with direct references to the base component to keep the
-implementation simple. Avoiding indirection is a pragmatic decision since
+implementation simple. Using explicit references in an extension is pragmatic since
 indirection always comes at a price (e.g., cognitive complexity and performance
 to name a few).  Extensions are typically done at a lower level, for example
 when creating new widgets for a library.
@@ -290,3 +290,8 @@ this approach.
 [custom]: https://w3c.github.io/webcomponents/spec/custom/
 [redux]: http://redux.js.org
 [shadow]: https://w3c.github.io/webcomponents/spec/shadow/
+
+[//]: # (This is the markup for a hidden comment in markdown.)
+[//]: # (Idea: most primitive type of widget is one that has no behavior, just text)
+[//]: # (All other widgets can be built on these to define only binding behavior)
+[//]: # (This might be useful for automated testing... needs more thought)
