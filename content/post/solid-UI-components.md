@@ -98,7 +98,7 @@ be seamless, from the point of view of the "customers".
 This is where SOLID shines.  These principles allow maximum reuse with minimal 
 coupling between the components as a means to productivity and robustness.  
 
-Reuse comes in two flavors. The first type is akin to "inheritance" when a
+Reuse comes in two flavors. The first type is "inheritance" where a
 component is extended to add features or modify presentation without breaking
 the contract of the base component. In this case the extension can act as a
 plug-in replacement for the base.
@@ -109,17 +109,19 @@ indirection always comes at a price (e.g., cognitive complexity and performance
 to name a few).  Extensions are typically done at a lower level, for example
 when creating new widgets for a library.
 
-The second type of reuse is when simpler components are combined into more
-complex components. This is a more typical scenario done at a higher level when
-pages or mashups are being designed. In this scenario the references to the
-inner components should remain abstract allowing the wiring to a concrete
-component to be done on initialization. The decision can vary by context and
-configuration and even by data type.  So for example, a table of items in a
-shopping cart can choose a "template" to instantiate based on the type of item.
+The second type of reuse is "composition" where simpler components are combined
+into more complex components. This is a more typical scenario done at a higher
+level when pages or mashups are being designed. In this scenario the references
+to the inner components should remain abstract allowing the wiring to a
+concrete implementation on initialization. The decision can vary by context and
+configuration and even by data type. So for example, a UI showing a list of
+items in a shopping cart can choose the component to instantiate based on the
+type of item.
 
-In both case (extension and composition) the bindings of the inner components
-to the model are left open to be hooked up dynamically to the model at run
-time.  View facing configuration (related to layout) should be hard-coded. 
+The bindings of the inner components should be established once their context
+is defined. This is true regardless of the reuse type (extension and
+composition). The view facing configuration of inner components (related to
+layout) can be hard-coded.
 
 ### Implementation
 
