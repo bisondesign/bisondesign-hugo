@@ -19,7 +19,6 @@ please share your insights in the comments.
 
 ---
 
-> I work for <a href="https://www.ptc.com/">PTC</a>, a global provider of
-solutions and technology platforms for IoT and AR. I do not speak on behalf of
-my employer and my views do not necessarily reflect my employer's views.
+> I am a Technical Fellow at PTC, a global provider of solutions and technology
+platforms for IoT and AR. My opinions are my own.
 
